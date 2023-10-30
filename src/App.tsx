@@ -52,8 +52,8 @@ function App() {
       <div className="rounded-2xl rounded-br-[20%] bg-white py-8 px-8 drop-shadow-lg shadow-black mx-4 md:mx-16">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="w-full">
-            <div className="top--date--provider--section w-[60%] flex flex-start gap-6">
-              <div className="flex flex-col gap-1 w-28">
+            <div className="top--date--provider--section w-[60%] flex flex-start gap-2 md:gap-6">
+              <div className="flex flex-col gap-1 w-20 md:w-28">
                 <label
                   htmlFor="day"
                   className={`font-[Poppins] font-normal pb-2 ${errors.day ? 'text-red-600' : 'text-smokeyGrey'}`}
@@ -80,7 +80,7 @@ function App() {
                 {typeof errors.day?.message === 'string' && <p className="text-red-600 text-xs text-left">{errors.day.message}</p>}
               </div>
 
-              <div className="flex flex-col gap-1 w-28">
+              <div className="flex flex-col gap-1 w-20 md:w-28">
                 <label
                   htmlFor="month"
                   className={`font-[Poppins] font-normal pb-2 ${errors.month ? 'text-red-600' : 'text-smokeyGrey'}`}
@@ -107,7 +107,7 @@ function App() {
                 {typeof errors.month?.message === 'string' && <p className="text-red-600 text-xs text-left">{errors.month?.message}</p>}
               </div>
 
-              <div className="flex flex-col gap-1 w-28">
+              <div className="flex flex-col gap-1 w-20 md:w-28">
                 <label
                   htmlFor="year"
                   className={`font-[Poppins] font-normal pb-2 ${errors.year ? 'text-red-600' : 'text-smokeyGrey'}`}
